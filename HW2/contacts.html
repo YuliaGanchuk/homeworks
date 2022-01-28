@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <table>
+                <tr>
+                    <td><img src="images/placeholder_140x50.png" alt="something"></td>
+                    <td><a href="about_us.html">About us</a></td>
+                    <td><a href="our_products.html">Our products</a></td>
+                    <td><a href="contacts.html">Contacts</a></td>
+                    <td><input type="search" placeholder="Search"></td>
+                </tr>
+            </table>
+            <hr>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Напишіть нам:</h2>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Пропозиції</legend>
+                            <input type="text" placeholder="Тема" minlength="20">
+                            <br>
+                            <br>
+                            <textarea name="prop" cols="30" rows="10"
+                                placeholder="Про що ви хочете написати?"></textarea>
+                        </fieldset>
+                    </td>
+                    <td>
+                    <td>
+                        <fieldset disabled>
+                            <legend>Скарги</legend>
+                            <input type="text" placeholder="Тема" minlength="20">
+                            <br>
+                            <br>
+                            <textarea name="prop" cols="30" rows="10"
+                                placeholder="Про що ви хочете написати?"></textarea>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <fieldset>
+                <legend>Чи задоволені ви результатом?</legend>
+                <label for="variant1">Так</label>
+                <input type="radio" id="variant1" name="variants" required>
+                <label for="variant2">Ні</label>
+                <input type="radio" id="variant2" name="variants">
+                <label for="variant3">Може бути</label>
+                <input type="radio" id="variant3" name="variants">
+            </fieldset>
+            <br>
+            <button>Відправити</button>
+            <br>
+            <br>
+        </form>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; Copyright 2022, USoftware</p>
+    </footer>
+</body>
+
+</html>
