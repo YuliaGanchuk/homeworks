@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 0 50px;
+            border: 4px solid rgb(236, 233, 233);
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .init {
+            padding-bottom: 5px;
+            margin: 15px 0;
+        }
+
+        .init input {
+            margin-top: 7px;
+            padding: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+        }
+
+        button,
+        .init input,
+        .check {
+            width: 100%;
+            height: 50px;
+            /* display: block; */
+        }
+
+        .init label {
+            font-weight: bold;
+        }
+
+        #login {
+            display: block;
+            color: white;
+            background-color: yellowgreen;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        #login:hover {
+            background-color: rgb(191, 231, 110);
+        }
+
+        .check {
+            box-sizing: border-box;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: rgb(240, 238, 238);
+        }
+
+        a {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="# ">
+        <h1>Login Form</h1>
+        <hr />
+        <div class="init">
+            <label for="name">Username</label>
+            <input id="name" type="text" placeholder="Enter Username" required />
+            <label for="pass">Password</label>
+            <input id="pass" type="text" placeholder="Enter Password" />
+        </div>
+        <button id="login" type="submit">Login</button>
+        <div class="check">
+            <input type="checkbox" id="check" />
+            <label for="check">Remember me</label>
+            <a href="https://www.google.com.ua/">Forgot password?</a>
+        </div>
+    </form>
+</body>
+
+</html>
