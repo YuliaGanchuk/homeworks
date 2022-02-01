@@ -64,10 +64,8 @@
             padding: 15px;
             margin-bottom: 15px;
             background-color: rgb(240, 238, 238);
-        }
-
-        a {
-            float: right;
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -80,12 +78,11 @@
             <label for="name">Username</label>
             <input id="name" type="text" placeholder="Enter Username" required />
             <label for="pass">Password</label>
-            <input id="pass" type="text" placeholder="Enter Password" />
+            <input id="pass" type="password" placeholder="Enter Password" />
         </div>
         <button id="login" type="submit">Login</button>
         <div class="check">
-            <input type="checkbox" id="check" />
-            <label for="check">Remember me</label>
+            <label><input type="checkbox" />Remember me</label>
             <a href="https://www.google.com.ua/">Forgot password?</a>
         </div>
     </form>
