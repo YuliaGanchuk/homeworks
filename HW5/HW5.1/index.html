@@ -84,6 +84,7 @@
 
       .total_price {
         font-size: 28px;
+        margin-bottom: 25px;
       }
       .above_button {
         font-size: 25px;
@@ -94,9 +95,9 @@
         color: #6d430a;
         padding: 18px 28px;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: bold;
         border-radius: 5px;
-        margin: 25px 0;
+        margin-bottom: 25px;
         border: none;
         box-shadow: 0 -2px 0 rgb(0, 0, 0, 0.2) inset,
           0 1px 1px rgb(0, 0, 0, 0.1);
@@ -104,16 +105,16 @@
       }
       .download:hover {
         background-color: #ffa200;
-      }
-      .background_image {
+      } 
+      .items:hover{
         background-image: url(images/background_triangles.png);
-        margin: 0;
         color: #fff;
       }
-      .back_color {
-        background-color: #221368;
+      .items:hover .item_buy{
+      background-color: #221368;
+
       }
-      .add_color {
+      .items:hover .dollar{
         color: #fff;
       }
     </style>
@@ -152,15 +153,15 @@
         </div>
         <div class="item_total">
           <p class="total_price above_button">Total: $1.50</p>
-          <button class="download"><b>Download 2 items</b></button>
+          <button class="download">Download 2 items</button>
         </div>
       </div>
-      <div class="items background_image">
-        <div class="item_buy back_color">
+      <div class="items">
+        <div class="item_buy">
           <p>Buy 4 items</p>
         </div>
         <div class="item_main">
-          <p class="price"><span class="dollar add_color">$0.50/</span>item</p>
+          <p class="price"><span class="dollar">$0.50/</span>item</p>
           <p class="save">Save 50%</p>
           <p class="plan">
             Most popular plan, buy this cool product and enjoy, only the best.
@@ -170,7 +171,7 @@
         </div>
         <div class="item_total">
           <p class="total_price above_button">Total: $2.00</p>
-          <button class="download"><b>Download 4 items</b></button>
+          <button class="download">Download 4 items</button>
         </div>
       </div>
       <div class="items">
@@ -187,7 +188,7 @@
         </div>
         <div class="item_total">
           <p class="total_price above_button">Total: $2.50</p>
-          <button class="download"><b>Download 10 items</b></button>
+          <button class="download">Download 10 items</button>
         </div>
       </div>
     </div>
