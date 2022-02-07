@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>homework5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        color: #60646c;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+      }
+
+      .title {
+        color: #303236;
+        padding: 50px 0 40px 0;
+        font-size: 40px;
+      }
+
+      .items {
+        float: left;
+        width: 24.6%;
+        margin: 0 2px;
+      }
+
+      .item_buy {
+        height: 90px;
+        font-size: 28px;
+        padding: 27.2px;
+        background-color: #f0f2f5;
+      }
+
+      .item_main {
+        margin: 0 22px;
+      }
+
+      .price {
+        padding: 50px 0 40px 0;
+        font-size: 32px;
+        overflow: hidden;
+      }
+
+      .dollar {
+        font-weight: 500;
+        font-size: 38px;
+        color: #303236;
+      }
+
+      .save {
+        font-size: 22px;
+      }
+
+      .plan {
+        font-weight: 500;
+        padding: 25.6px 0;
+        line-height: 1.5;
+      }
+
+      hr {
+        background-color: #ccc;
+        border: 0 none;
+        height: 2px;
+      }
+
+      .item_total {
+        margin-top: 30px;
+      }
+
+      .total_price {
+        font-size: 28px;
+        margin-bottom: 25px;
+      }
+      .above_button {
+        font-size: 25px;
+        font-weight: 500;
+      }
+      .download {
+        background-color: #ffc600;
+        color: #6d430a;
+        padding: 18px 28px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        border: none;
+        box-shadow: 0 -2px 0 rgb(0, 0, 0, 0.2) inset,
+          0 1px 1px rgb(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+      .download:hover {
+        background-color: #ffa200;
+      } 
+      .items:hover{
+        background-image: url(images/background_triangles.png);
+        color: #fff;
+      }
+      .items:hover .item_buy{
+      background-color: #221368;
+
+      }
+      .items:hover .dollar{
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">
+        <p>Pricing table HTML and CSS from Psdgraphics.com</p>
+      </div>
+      <div class="items">
+        <div class="item_buy">
+          <p>Buy 1 item</p>
+        </div>
+        <div class="item_main">
+          <p class="price"><span class="dollar">$1.00/</span>item</p>
+          <p class="save">Regular price</p>
+          <p class="plan">Basic plan</p>
+          <hr />
+        </div>
+        <div class="item_total">
+          <p class="total_price">Single item</p>
+        </div>
+      </div>
+      <div class="items">
+        <div class="item_buy">
+          <p>Buy 2 items</p>
+        </div>
+        <div class="item_main">
+          <p class="price"><span class="dollar">$0.75/</span>item</p>
+          <p class="save">Save 25%</p>
+          <p class="plan">
+            Starter plan, buy this cool product and enjoy, only the best.
+          </p>
+          <hr />
+        </div>
+        <div class="item_total">
+          <p class="total_price above_button">Total: $1.50</p>
+          <button class="download">Download 2 items</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="item_buy">
+          <p>Buy 4 items</p>
+        </div>
+        <div class="item_main">
+          <p class="price"><span class="dollar">$0.50/</span>item</p>
+          <p class="save">Save 50%</p>
+          <p class="plan">
+            Most popular plan, buy this cool product and enjoy, only the best.
+            Simply amazing.
+          </p>
+          <hr />
+        </div>
+        <div class="item_total">
+          <p class="total_price above_button">Total: $2.00</p>
+          <button class="download">Download 4 items</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="item_buy">
+          <p>Buy 10 items</p>
+        </div>
+        <div class="item_main">
+          <p class="price"><span class="dollar">$0.25/</span>item</p>
+          <p class="save">Save 75%</p>
+          <p class="plan">
+            Advanced plan, buy this cool product and enjoy, only the best.
+          </p>
+          <hr />
+        </div>
+        <div class="item_total">
+          <p class="total_price above_button">Total: $2.50</p>
+          <button class="download">Download 10 items</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
