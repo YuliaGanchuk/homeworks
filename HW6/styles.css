@@ -229,6 +229,7 @@ i {
   padding: 18px 0;
   text-decoration: none;
   font-weight: bold;
+  text-transform: uppercase;
   width: 190px;
   border-radius: 30px;
   letter-spacing: 2px;
@@ -375,8 +376,9 @@ i {
 /* ------------------------------------------Styling fifth section------------------ */
 .fifth_section {
   background-image: url(images/background_white.jpg);
+  padding-bottom:  30px;
 }
-.prising_container {
+.pricing_container {
   max-width: 1200px;
   padding: 80px 0 90px;
   margin: 0 auto;
@@ -384,22 +386,24 @@ i {
   flex-direction: column;
   align-items: center;
 }
-.prising_text{
+.pricing_text{
   max-width: 800px;
   padding: 0 15px;
  text-align: center;
 }
-.prising_text_main{
+.pricing_text_main{
   padding: 0;
 }
-.prising_text_last{
+.pricing_text_last{
   margin: 15px 0 40px;
 }
-.prising_table{
+.pricing_table{
 width: 100%;
 padding: 0 15px;
+display: flex;
+gap: 30px;
 }
-.prising_table_item{
+.pricing_table_item{
   width: 31.5%;
   padding: 50px;
   background-color: #404044;
@@ -407,9 +411,65 @@ padding: 0 15px;
   flex-direction: column;
   align-items: center;
 }
-.prising_table_item div{
+.pricing_table_item:hover{
+  box-shadow: inset 0px 0px 10px 0px #ffffff;
+}
+.pricing_table_item div{
   color: #ffffff;
 }
 .back_blue{
   background-color: #505cfd;
+}
+.pricing_above_title{
+  width: 260px;
+  text-align: center;
+  padding: 17px 0px 25px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main_price{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;  
+}
+.main_price_number{
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.dolar{
+  font-size: 30px;
+  margin-right: 5px;
+}
+.pricing_number{
+  font-size: 60px;
+}
+.monthly{
+  background-color: #48484c;
+  font-family: "Montserrat", serif;
+  font-size: 12px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 3px 20px;
+}
+.back_blue_button{
+  background-color: #626dfd;;
+}
+.back_blue_button2{
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.text_above_pricing{
+  margin-top: 20px;
+  text-align: center;
+}
+.add_margin_pricing{
+  margin-bottom: 30px;
+  padding: 17px 35px;
+  width: 200px;
 }
