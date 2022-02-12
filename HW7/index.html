@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/759adfea8c.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -18,7 +22,74 @@
     ></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="header_line1">
+        <a
+          class="header_image"
+          target="blank"
+          href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=common/home"
+          ><img src="images/header_image.webp" alt="logo of online store"
+        /></a>
+        <div class="header_input">
+          <input class="header_search" type="text" />
+          <button type="button" class="header_button">Search</button>
+        </div>
+        <div class="contact_number">
+          <i class="fas fa-phone-alt"></i>
+          <a class="phone_number" target="blank" href="tel:80023456789"
+            >800-2345-6789</a
+          >
+        </div>
+      </div>
+      <div class="header_line2">
+        <div class="categories">Categories</div>
+        <div class="nav_container">
+          <nav class="navigation">
+            <div class="nav_items nav_item1">
+              <i class="fas fa-home" title="Home"></i>
+              <a class="nav_hover" target="blank"
+                href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=common/home"
+                >Home</a
+              >
+            </div>
+            <div class="nav_items">
+              <i class="far fa-star" title="Wish list (0)"></i>
+              <a class="nav_hover" target="blank"
+                href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
+                >Wish list (0)</a
+              >
+            </div>
+            <div class="nav_items">
+              <i class="fas fa-user-lock" title="My account"></i>
+              <a class="nav_hover" target="blank"
+                href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
+                >My account</a
+              >
+            </div>
+            <div class="nav_items">
+              <i class="far fa-user" title="Log in"></i>
+              <a class="nav_hover" target="blank"
+                href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
+                >Log in</a
+              >
+            </div>
+            <div class="nav_items">
+              <i class="far fa-check-square" title="Checkout"></i>
+              <a class="nav_hover" target="blank"
+                href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
+                >Checkout</a>
+            </div>
+          </nav>
+          <div class="shopping_list nav_items">
+            <i class="fas fa-shopping-cart nav_hover2"></i>
+            <a class="nav_hover2" target="blank"
+              href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=common/home"
+              > 0 item(s)</a>
+              <i class="fas fa-angle-down nav_hover2"></i>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <div class="main_content">
         <div class="main_description">
@@ -28,6 +99,7 @@
           </p>
           <a
             class="main_href"
+            target="blank"
             href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=product/product&path=57&product_id=50"
             >Shop now!</a
           >
@@ -39,6 +111,7 @@
           <h6 class="add_line2 add_line1">Arrivals</h6>
           <a
             class="add_href"
+            target="blank"
             href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
             >Shop now!</a
           >
@@ -63,13 +136,24 @@
         <h3>Latest</h3>
       </div>
       <div class="goods1 add_padding">
+        <span class="new"> <span class="little_square"></span>New</span>
+        <span class="sale"><span class="little_square2"></span>Sale</span>
         <div class="goods_image">
-          <img src="images/goods_image1.webp" alt="Subwoofer" />
+          <a
+            target="blank"
+            href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=product/product&product_id=50"
+          >
+            <img
+              src="images/goods_image1.webp"
+              title="Sound Bar with Wireless Subwoofer"
+              alt="Subwoofer"
+          /></a>
         </div>
         <div class="goods_description">
           <p class="goods_line1">$120.00</p>
           <a
             class="goods_line2"
+            target="blank"
             href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=product/product&product_id=50"
             >Sound Bar with Wireless Subwoofer</a
           >
@@ -94,14 +178,26 @@
         </div>
       </div>
       <div class="goods2 add_padding">
+        <span class="new"><span class="little_square"></span>New</span>
+        <span class="sale"><span class="little_square2"></span>Sale</span>
         <div class="goods_image">
-          <img src="images/goods_image2.webp" alt="Iron" />
+          <a
+            target="blank"
+            href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=product/product&product_id=49"
+          >
+            <img
+              src="images/goods_image2.webp"
+              title="Master Iron with Anti-Drip System "
+              alt="Iron"
+            />
+          </a>
         </div>
         <div class="goods_description">
           <p class="goods_line1">$40.00</p>
           <a
             class="goods_line2"
-            href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
+            target="blank"
+            href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=product/product&product_id=49"
             >Master Iron with Anti-Drip System
           </a>
           <p class="goods_line3 main_line2">
@@ -125,13 +221,24 @@
         </div>
       </div>
       <div class="goods3 add_padding">
+        <span class="new"><span class="little_square"></span>New</span>
+        <span class="sale"><span class="little_square2"></span>Sale</span>
         <div class="goods_image">
-          <img src="images/goods_image3.webp" alt="TV" />
+          <a
+            target="blank"
+            href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=product/product&product_id=48"
+          >
+            <img
+              src="images/goods_image3.webp"
+              title="48-Inch 1080p 60Hz Smart LED TV"
+              alt="TV"
+          /></a>
         </div>
         <div class="goods_description">
           <p class="goods_line1">$550.00</p>
           <a
             class="goods_line2"
+            target="blank"
             href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=product/product&product_id=48"
             >48-Inch 1080p 60Hz Smart LED TV</a
           >
@@ -155,7 +262,12 @@
           </div>
         </div>
       </div>
-      <img class="ad_image" src="images/ad_image.webp" alt="Advertisement" />
+      <a
+        class="ad_image"
+        target="blank"
+        href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
+        ><img src="images/ad_image.webp" alt="Advertisement"
+      /></a>
     </main>
     <footer></footer>
   </body>
