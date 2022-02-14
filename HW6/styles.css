@@ -26,7 +26,6 @@ img{
   gap: 40px;
 }
 .contacts_href {
-  /* text-decoration: none; */
   font-size: 14px;
   color: rgba(170, 178, 185, 0.5);
 }
@@ -116,7 +115,6 @@ i {
   font-size: 48px;
   font-weight: 300;
   padding-left: 130px;
-  /* padding-top: 20px; */
   vertical-align: top;
 }
 .word_best {
@@ -148,7 +146,6 @@ i {
   height: 305px;
   border-bottom: 3px solid #ffffff;
   margin-right: 20px;
-  /* padding-bottom: 10px; */
 }
 .chevron_down {
   display: inline-block;
@@ -277,10 +274,8 @@ i {
 }
 .container {
   width: 1170px;
-  /* margin: 0 auto; */
   display: flex;
   position: relative;
-  /* justify-content: center; */
 }
 .text_left {
   width: 700px;
@@ -359,7 +354,6 @@ i {
 }
 .number_item {
   width: 25%;
-  /* height: 85px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,7 +380,6 @@ i {
 /* ------------------------------------------Styling fifth section------------------ */
 .fifth_section {
   background-image: url(images/background_white.jpg);
-  /* padding-bottom:  30px; */
 }
 .pricing_container {
   max-width: 1200px;
