@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework7</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -24,12 +24,13 @@
   <body>
     <header>
       <div class="header_line1">
-        <a
-          class="header_image"
-          target="blank"
-          href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=common/home"
-          ><img src="images/header_image.webp" alt="logo of online store"
-        /></a>
+        <div class="header_image">
+          <a
+            target="blank"
+            href="https://livedemo00-opencart.template-help.com/opencart_prod-23516/index.php?route=common/home"
+            ><img src="images/header_image.webp" alt="logo of online store"
+          /></a>
+        </div>
         <div class="header_input">
           <input class="header_search" type="text" />
           <button type="button" class="header_button">Search</button>
@@ -46,7 +47,7 @@
         <div class="nav_container">
           <nav class="navigation">
             <div class="nav_items nav_item1">
-              <i class="fas fa-home" title="Home"></i>
+              <i class="fas fa-home" name="Home"></i>
               <a
                 class="nav_hover"
                 target="blank"
@@ -55,7 +56,7 @@
               >
             </div>
             <div class="nav_items">
-              <i class="far fa-star" title="Wish list (0)"></i>
+              <i class="far fa-star" name="Wish list (0)"></i>
               <a
                 class="nav_hover"
                 target="blank"
@@ -64,7 +65,7 @@
               >
             </div>
             <div class="nav_items">
-              <i class="fas fa-user-lock" title="My account"></i>
+              <i class="fas fa-user-lock" name="My account"></i>
               <a
                 class="nav_hover"
                 target="blank"
@@ -73,7 +74,7 @@
               >
             </div>
             <div class="nav_items">
-              <i class="far fa-user" title="Log in"></i>
+              <i class="far fa-user" name="Log in"></i>
               <a
                 class="nav_hover"
                 target="blank"
@@ -82,7 +83,7 @@
               >
             </div>
             <div class="nav_items">
-              <i class="far fa-check-square" title="Checkout"></i>
+              <i class="far fa-check-square" name="Checkout"></i>
               <a
                 class="nav_hover"
                 target="blank"
@@ -176,12 +177,18 @@
             Comfort is a very important thing nowadays because it is a c..
           </p>
           <div class="goods_line4">
-            <div class="goods_icons back_blue">
+            <div name="Add to Cart" class="goods_icons back_blue">
               <i class="fas fa-shopping-cart"></i>
             </div>
-            <div class="goods_icons"><i class="far fa-heart"></i></div>
-            <div class="goods_icons"><i class="fas fa-exchange-alt"></i></div>
-            <div class="goods_icons"><i class="far fa-eye"></i></div>
+            <div name="Add to Wish List" class="goods_icons">
+              <i class="far fa-heart"></i>
+            </div>
+            <div name="Compare this Product" class="goods_icons">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div name="Quick View" class="goods_icons">
+              <i class="far fa-eye"></i>
+            </div>
           </div>
           <div class="goods_rate">
             <i class="far fa-star"></i>
@@ -219,12 +226,18 @@
             Comfort is a very important thing nowadays because it is a c..
           </p>
           <div class="goods_line4">
-            <div class="goods_icons back_blue">
+            <div name="Add to Cart" class="goods_icons back_blue">
               <i class="fas fa-shopping-cart"></i>
             </div>
-            <div class="goods_icons"><i class="far fa-heart"></i></div>
-            <div class="goods_icons"><i class="fas fa-exchange-alt"></i></div>
-            <div class="goods_icons"><i class="far fa-eye"></i></div>
+            <div name="Add to Wish List" class="goods_icons">
+              <i class="far fa-heart"></i>
+            </div>
+            <div name="Compare this Product" class="goods_icons">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div name="Quick View" class="goods_icons">
+              <i class="far fa-eye"></i>
+            </div>
           </div>
           <div class="goods_rate">
             <i class="far fa-star"></i>
@@ -261,12 +274,18 @@
             Comfort is a very important thing nowadays because it is a c..
           </p>
           <div class="goods_line4">
-            <div class="goods_icons back_blue">
+            <div name=" Add to Cart" class="goods_icons back_blue">
               <i class="fas fa-shopping-cart"></i>
             </div>
-            <div class="goods_icons"><i class="far fa-heart"></i></div>
-            <div class="goods_icons"><i class="fas fa-exchange-alt"></i></div>
-            <div class="goods_icons"><i class="far fa-eye"></i></div>
+            <div name="Add to Wish List" class="goods_icons">
+              <i class="far fa-heart"></i>
+            </div>
+            <div name="Compare this Product" class="goods_icons">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div name="Quick View" class="goods_icons">
+              <i class="far fa-eye"></i>
+            </div>
           </div>
           <div class="goods_rate">
             <i class="far fa-star"></i>
@@ -286,7 +305,7 @@
     </main>
     <footer>
       <div class="footer_line1">
-        <div class="footer_item">
+        <nav class="footer_item">
           <h3 class="head_line">Information</h3>
           <a
             href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
@@ -304,8 +323,8 @@
             href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
             >Terms & conditions</a
           >
-        </div>
-        <div class="footer_item">
+        </nav>
+        <nav class="footer_item">
           <h3 class="head_line">My account</h3>
           <a
             href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
@@ -323,8 +342,8 @@
             href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
             >Gift certificates</a
           >
-        </div>
-        <div class="footer_item">
+        </nav>
+        <nav class="footer_item">
           <h3 class="head_line">Customer service</h3>
           <a
             href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
@@ -342,11 +361,16 @@
             href="https://www.templatemonsterpreview.com/demo/54714.html?_gl=1*2fpnaz*_ga*NTU0OTc1NDYuMTY0NDA0OTEzOA..*_ga_FTPYEGT5LY*MTY0NDQyMTQyNC43LjEuMTY0NDQyMTQ3Ni44&_ga=2.38338851.1847645594.1644421425-55497546.1644049138"
             >Blog</a
           >
-        </div>
+        </nav>
       </div>
       <div class="footer_line2">
         <i class="far fa-star"></i>
-        <p>Powered By <a target="blank" href="https://www.opencart.com/">OpenCart</a> Electromo © 2022. Design by <a target="blank" href="https://zemez.io/">Zemez</a></p>
+        <p>
+          Powered By
+          <a target="blank" href="https://www.opencart.com/">OpenCart</a>
+          Electromo © 2022. Design by
+          <a target="blank" href="https://zemez.io/">Zemez</a>
+        </p>
       </div>
     </footer>
   </body>

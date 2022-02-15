@@ -1,0 +1,84 @@
+@media screen and (max-width: 991px) {
+ .header_line1, .header_line2{
+     max-width: 750px;
+ }
+ .header_image, .contact_number{
+    width: 25%;
+ }
+ .header_input{
+     width: 50%;
+     padding: 10.5px 15px;
+ }
+ .header_image img{
+     width: 100%;
+     padding: 11px 15px 0 0;
+ }
+ .header_search{
+     width: 75%;
+ }
+ .header_button{
+     width:25%;
+ }
+ .phone_number{
+     font-size: 18px;
+ }
+ .categories{
+     width: 33.33333%;
+ }
+ .nav_container{
+     width: 66.66667%;
+
+ }
+.navigation{
+    width: 70%;
+    padding-right: 30px;
+}
+.nav_items{
+    width: 20%;
+}
+.nav_items i{
+    font-size: 24px;
+}
+i[name]:hover::after{
+    top: -15%;
+    left: 50%;
+  }
+.shopping_list{
+    width: 30%;
+}
+ .navigation a{
+     display: none;
+ }
+ main{
+     max-width: 750px;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(4, 442.1px) 45px 551px auto;
+     gap: 30px;
+     padding: 0 10px;
+     grid-template-areas:
+       "main_content main_content"
+       "add_content1 add_content1"
+       "add_content2 add_content2"
+       "add_content3 add_content3"
+       "latest latest"
+       "goods1 goods2"
+       "ad_image ad_image";
+ }
+ .main_line1{
+     font-size: 25px;
+ }
+ .main_description{
+     margin-left: 30px;
+ }
+ .add_description{
+     margin-top: 90px;
+     padding-left: 10px;
+
+ }
+ .goods3{
+     display: none;
+ }
+ .footer_line1, .footer_line2{
+     max-width: 750px;
+ }
+}

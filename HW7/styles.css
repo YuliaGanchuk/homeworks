@@ -7,6 +7,35 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+i[name]:hover::after{
+  content: attr(name);
+  background-color: #34b1da;
+  color: #fff;
+  position: absolute;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  padding: 5px;
+  
+  font-size: 12px;
+  width: max-content;
+  top: -10%;
+  left: 10%;
+}
+
+div[name]:hover::after{
+  
+  content: attr(name);
+  background-color: #34b1da;
+  color: #fff;
+  position: absolute;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 5px;
+  width: max-content;
+  transform: translateY(-100%)translateX(-50%);
+  top: -5px;
+  left: 50%;
+}
 body {
   font-family: "Ubuntu", sans-serif;
 }
@@ -18,9 +47,7 @@ header{
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  /* justify-content: space-between; */
-  /* gap: 30px; */
-  padding: 10px 0 20px 0;
+  padding: 10px 15px 20px;
 }
 .header_image{
   width: 24%;
@@ -55,14 +82,16 @@ header{
     font-weight: 300;
     border-radius: 0 4px 4px 0;
     border: none;
+    transition: 0.3s;
 }
 .header_button:hover{
+  transition: background-color 0.3s linear;
   background-color: #2f2f2f;
 }
 .contact_number{
   width: 20%;
   color: #2f2f2f;
-  padding-left: 10.5px 0;
+  padding: 10.5px 0;
   font-size: 21px;
   display: flex;
   justify-content: right;
@@ -76,9 +105,11 @@ header{
   color: #2f2f2f;
   line-height: 30px;
   font-weight: 500;
+  transition: 0.3s;
 }
 .header_line2{
   max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
   display: flex;
   padding-bottom: 30px;
@@ -112,6 +143,10 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.nav_hover, .nav_hover2{
+  transition: 0.3s;
 }
 .nav_items, .nav_items a{
   color: #fff;
@@ -123,12 +158,14 @@ header{
   text-transform: capitalize;
 }
 .nav_items, .nav_item1, .phone_number:hover{
+  transition: color 0.3s linear;
   color: #34b1da;
 }
 .nav_items:hover .nav_hover {
   color: #34b1da;
 }
-.nav_items:hover .nav_hover2{
+.shopping_list:hover .nav_hover2{
+  transition: color 0.3s linear;
   color: #9de4fb;
 }
 .shopping_list{
@@ -149,6 +186,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 345px 227px 45px 512px auto;
   gap: 30px;
+  padding: 0 10px;
   grid-template-areas:
     "main_content main_content main_content"
     "add_content1 add_content2 add_content3"
@@ -195,10 +233,11 @@ span {
   background: #464646;
   border-radius: 4px;
   text-transform: capitalize;
+  transition: 0.3s;
 }
 .main_href:hover {
-  color: #fff;
-  background: #34b1da;
+  transition: background-color 0.3s linear;
+  background-color: #34b1da;
 }
 .add_padding {
   padding: 0 20px;
@@ -209,13 +248,17 @@ span {
   background-image: url(images/add_content_picture1.webp);
   background-size: cover;
 }
+.add_content1, .add_content2, .add_content3{
+transition: 0.2s;
+}
 .add_content1:hover,
 .add_content2:hover,
 .add_content3:hover {
+  transition: box-shadow 0.2s linear;
   box-shadow: inset 0 0 0 5px #9de4fb;
 }
 .add_description {
-  margin: 40px 20px 0 0;
+  margin: 40px 0 0 0;
 }
 .add_line1 {
   font-size: 24px;
@@ -319,10 +362,11 @@ span {
   font-size: 13px;
   font-weight: 400;
   color: #2f2f2f;
+  transition: 0.3;
 }
 .goods_line2:hover{
+  transition: color 0.3s linear;
 color: #34b1da;
-cursor: pointer;
 }
 .goods_line3 {
   margin-top: 2px;
@@ -330,6 +374,9 @@ cursor: pointer;
 .goods_line4 {
   display: flex;
   gap: 10px;
+  color: #2f2f2f;
+  font-size: 14px;
+  margin: 11px 0 10px;
 }
 .goods_icons {
   width: 38px;
@@ -339,20 +386,18 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.goods_line4 {
-  color: #2f2f2f;
-  font-size: 14px;
-  margin: 11px 0 10px;
+  transition: 0.2s;
+  position: relative;
 }
 .back_blue {
   background-color: #34b1da;
   color: white;
 }
 .goods_icons:hover {
+  transition: color 0.2s linear, background-color 0.2s linear;
   background-color: #2f2f2f;
   color: white;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .goods2 {
   grid-area: goods2;
@@ -383,6 +428,7 @@ footer{
 }
 .footer_line1{
   max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
   display: flex;
 }
@@ -418,7 +464,7 @@ a span{
   line-height: 28px;
   font-weight: 400;
   margin: 0 auto;
-  padding: 12px 0 31px;
+  padding: 12px 15px 31px;
   color: #fff;
   display: flex;
 }
@@ -429,3 +475,4 @@ a span{
   padding: 7px 7px 0 0;
   color: #34b1da;
 }
+/* @import url(tablet_styles.css); */
