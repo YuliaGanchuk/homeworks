@@ -276,4 +276,12 @@ body {
     border-radius: 50%;
     transform: scaleX(0.5);
   }
+  @keyframes emptyanim {}
+
+.smile3:hover .eye_right,
+.smile3:hover .eye_left,
+.smile3:hover .mouth {
+  animation: emptyanim;
+  transition: all 0.5s ease-in;
+}
   
