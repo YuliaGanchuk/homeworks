@@ -1,0 +1,39 @@
+@media screen and (max-width: 1199px) {
+  .header_line1,
+  .header_line2 {
+    max-width: 970px;
+  }
+  .header_search {
+    width: 75%;
+  }
+  .header_button {
+    width: 25%;
+  }
+  .navigation {
+    padding-left: 20px;
+    gap: 24px;
+  }
+  main {
+    max-width: 970px;
+    grid-template-rows: 345px 180px 45px auto auto;
+  }
+  .main_description {
+    margin-left: 30px;
+    top: -15px;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+  }
+  .add_padding1 {
+    width: 293.3px;
+  }
+  .goods_item {
+    min-width: 293.3px;
+  }
+  .footer_line1 {
+    max-width: 970px;
+  }
+  .footer_line2 {
+    max-width: 940px;
+  }
+}

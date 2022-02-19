@@ -1,0 +1,124 @@
+@media screen and (max-width: 767px) {
+  .header_line1,
+  .header_line2 {
+    max-width: 100%;
+  }
+  .header_line1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "header_image contact_number"
+      "header_input header_input"
+      "nav_container nav_container";
+  }
+  .header_image {
+    grid-area: header_image;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .contact_number {
+    grid-area: contact_number;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header_input {
+    grid-area: header_input;
+    width: 100%;
+  }
+  .header_search {
+    width: 76%;
+  }
+  .header_button {
+    width: 24%;
+  }
+  .nav_container {
+    grid-area: nav_container;
+    width: 100%;
+    margin-left: 0;
+    padding: 0 15px;
+  }
+  .navigation {
+    width: 76%;
+    padding: 0 20px;
+  }
+  .shopping_list {
+    width: 24%;
+  }
+
+  main {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 345px repeat(3, 60vw) 45px auto auto;
+    grid-template-areas:
+      "main_content "
+      "add_content1 "
+      "add_content2 "
+      "add_content3 "
+      "latest "
+      "goods "
+      "ad_image ";
+  }
+  .categories {
+    display: none;
+  }
+  .goods_item {
+    min-width: 100%;
+  }
+  .footer_line1 {
+    justify-content: space-between;
+  }
+  .footer_line2 {
+    margin: 0 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header_search {
+    width: 70%;
+  }
+  .header_button {
+    width: 30%;
+  }
+  .navigation {
+    width: 70%;
+  }
+  .shopping_list {
+    width: 30%;
+  }
+  .nav_items i {
+    font-size: 20px;
+  }
+  .shopping_list i {
+    font-size: 20px;
+  }
+  .shopping_list a {
+    padding: 0 4px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .contact_number {
+    padding: 0 15px 0 0;
+  }
+  .phone_number {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .navigation {
+    gap: 15px;
+    padding: 0 15px;
+  }
+  .nav_hover2 {
+    display: none;
+  }
+  .nav_hover2 + .fa-angle-down {
+    display: none;
+  }
+  .footer_line1 {
+    justify-content: left;
+    flex-direction: column;
+  }
+  .footer_item {
+    width: max-content;
+  }
+}
