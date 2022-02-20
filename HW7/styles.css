@@ -216,8 +216,6 @@ main {
   background-size: 1150px 345px;
   background-position: center center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
 }
 .slide-first {
   background-image: url(images/main_photo.jpg);
@@ -246,48 +244,61 @@ main {
 @keyframes slide1 {
   0% {
     opacity: 1;
+    z-index: 5;
   }
   30% {
     opacity: 1;
+    z-index: 5;
   }
   33.33% {
     opacity: 0;
+    z-index: 0;
   }
   96.66% {
     opacity: 0;
+    z-index: 0;
   }
   100% {
     opacity: 1;
+    z-index: 5;
   }
 }
 
 @keyframes slide2 {
   30% {
     opacity: 0;
+    z-index: 0;
   }
   33.33% {
     opacity: 1;
+    z-index: 5;
   }
   63.33% {
     opacity: 1;
+    z-index: 5;
   }
   66.66% {
     opacity: 0;
+    z-index: 0;
   }
 }
 
 @keyframes slide3 {
   63.33% {
     opacity: 0;
+    z-index: 0;
   }
   66.66% {
     opacity: 1;
+    z-index: 5;
   }
   96.66% {
     opacity: 1;
+    z-index: 5;
   }
   100% {
     opacity: 0;
+    z-index: 5;
   }
 }
 .main_description {
