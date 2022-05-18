@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 10px;
+        padding: 0;
+      }
+      #container {
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        background-color: beige;
+        box-shadow: 0px 0px 5px 2px rgb(245, 217, 180);
+      }
+      #littleSquare {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        background-color: black;
+        display: none;
+      }
+      #blueSquare,
+      #yellowSquare {
+        width: 50px;
+        height: 25px;
+        display: none;
+      }
+      #blueSquare {
+        background-color: deepskyblue;
+      }
+      #yellowSquare {
+        background-color: yellow;
+      }
+
+      .shake {
+        animation-name: shake;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+      }
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          transform: translateX(-10px);
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+          transform: translateX(10px);
+        }
+      }
+      fieldset {
+        display: none;
+      }
+      #doubleClick{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="littleSquare">
+        <div class="displayUA" id="blueSquare"></div>
+        <div class="displayUA" id="yellowSquare"></div>
+      </div>
+    </div>
+    <p>
+      Choose background color for a big square
+      <select name="select" id="selectColor">
+        <option value="beige">Beige</option>
+        <option value="orange">Orange</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="purple">Purple</option>
+      </select>
+    </p>
+    <button id="create">Create a little square inside a big square</button>
+    <button id="move">
+      Press and hold to move a little square in a random way
+    </button>
+    <button id="remove">
+      Remove a little square from a big square
+    </button></br>
+    <fieldset>
+      <legend>Chose option to change form for a little square</legend>
+
+      <div>
+        <input type="radio" value="rad3" name="myRadio" id="square" checked />
+        <label for="square">Square(default)</label>
+      </div>
+
+      <div>
+        <input type="radio" value="rad1" name="myRadio" id="circle" />
+        <label for="circle">Circle</label>
+      </div>
+
+      <div>
+        <input type="radio" value="rad2" name="myRadio" id="rectangle" />
+        <label for="rectangle">Rectangle</label>
+      </div>
+
+      <div>
+        <input type="radio" value="rad3" name="myRadio" id="ellipse" />
+        <label for="ellipse">Ellipse</label>
+      </div></br>
+      <p id="doubleClick">Double click on little square to make it in Ukrainian colors!</p>
+
+    </fieldset>
+
+    <script>
+      let changeContainer = document.getElementById("container");
+      let selectionContainer = document.getElementById("selectColor");
+      selectionContainer.addEventListener("change", (event) => {
+        switch (event.target.value) {
+          case "orange":
+            changeContainer.style.backgroundColor = "orange";
+            changeContainer.style.boxShadow = " 0px 0px 5px 2px chocolate";
+            break;
+          case "red":
+            changeContainer.style.backgroundColor = "red";
+            changeContainer.style.boxShadow = " 0px 0px 5px 2px brown";
+
+            break;
+          case "green":
+            changeContainer.style.backgroundColor = "lightgreen";
+            changeContainer.style.boxShadow = " 0px 0px 5px 2px darkgreen";
+
+            break;
+          case "purple":
+            changeContainer.style.backgroundColor = "mediumpurple";
+            changeContainer.style.boxShadow = " 0px 0px 5px 2px indigo";
+
+            break;
+          default:
+            changeContainer.style.backgroundColor = "beige";
+        }
+      });
+      let buttonCreate = document.getElementById("create");
+      let smallSquare = document.getElementById("littleSquare");
+      let containerWidth = changeContainer.clientWidth;
+      let containerHeight = changeContainer.clientHeight;
+      let buttonMove = document.getElementById("move");
+      let divArray = Array.from(
+            document.getElementsByClassName("displayUA")
+          );
+      let buttonRemove = document.getElementById("remove");
+      let radio = document.querySelector("fieldset");
+      let doubleText = document.getElementById("doubleClick");
+
+      function getRandomNumber(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+      function changePosition() {
+        var randomTop = getRandomNumber(0, containerHeight - 50);
+        var randomLeft = getRandomNumber(0, containerWidth - 65);
+        smallSquare.style.top = randomTop + "px";
+        smallSquare.style.left = randomLeft + "px";
+      }
+
+      buttonCreate.addEventListener("click", () => {
+        smallSquare.style.display = "inline-block";
+        smallSquare.style.backgroundColor = "black";
+        smallSquare.addEventListener("dblclick", () => {
+          for (let elem of divArray) {
+            elem.style.display = "block";
+          }
+          smallSquare.style.backgroundColor = "transparent";
+        });
+
+        changePosition();
+        let moving;
+        console.log(smallSquare.style.display);
+        if(smallSquare.style.display == "inline-block"){
+          console.log("rfgyhujk");
+          doubleText.style.display = "initial";
+          radio.style.display = "initial";
+          buttonMove.addEventListener("mousedown", () => {
+          moving = setInterval(changePosition, 400);
+        });
+
+        buttonMove.addEventListener("mouseup", () => {
+          clearInterval(moving);
+        });
+
+        smallSquare.addEventListener("mouseover", () => {
+          smallSquare.style.cursor = "pointer";
+          smallSquare.classList.add("shake");
+        });
+        smallSquare.addEventListener("mouseout", () => {
+          smallSquare.classList.remove("shake");
+        });
+   
+        radio.addEventListener("click", (event) => {
+          switch (event.target.id) {
+            case "circle":
+              smallSquare.style.borderRadius = "50%";
+              smallSquare.style.width = "50px";
+              break;
+            case "rectangle":
+              smallSquare.style.width = "65px";
+              smallSquare.style.borderRadius = "10%";
+               for (let elem of divArray) {
+               elem.style.width = "65px";
+               }
+              break;
+            case "ellipse":
+              smallSquare.style.width = "65px";
+              smallSquare.style.borderRadius = "50%";
+              break;
+            default:
+              smallSquare.style.borderRadius = "";
+              smallSquare.style.width = "50px";
+          }
+        });
+
+        }
+        buttonRemove.addEventListener("click", () => {
+             smallSquare.style.display= "none";
+             radio.style.display= "none";
+             for (let elem of divArray) {
+            elem.style.display = "none";
+          }
+
+           })
+      });
+    </script>
+  </body>
+</html>
